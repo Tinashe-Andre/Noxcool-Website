@@ -1004,6 +1004,21 @@ footer a:hover {
     margin-top: 80px;
 }
 
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+    .page-hero {
+        margin-top: 70px;
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        margin-top: 65px;
+        min-height: 50vh;
+    }
+}
+
 /* Active navigation link */
 #nav-links a.active {
     color: var(--primary-color);
