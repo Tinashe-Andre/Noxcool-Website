@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noxcool Air Conditioning & Appliances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="floatingActionButton.js" defer></script>
+    <link rel="icon" type="image/png" href="img/Icon.png">
+</head>
+<body>
+    <header>
+    <div class="top-nav">
+        <a href="#home"><img src="img/Transparent Logo.png" alt="Noxcool Logo" class="logo"></a>
+        <div id="nav-links">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#products" onclick="closeMenu()">Products</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#contact" onclick="closeMenu()">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Experience Comfort & Reliability</h1>
+                <p>Industry leaders in air conditioning, refrigeration, and appliance solutions for homes and businesses across South Africa.</p>
+                <a href="#contact" class="cta-btn">Get a Quote <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero-ac.jpg" alt="Modern Air Conditioner">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2>About Noxcool</h2>
+                <p>
+                    With over 15 years of experience, Noxcool delivers innovative climate and appliance solutions tailored for South African conditions. Our certified technicians and customer-first approach ensure you get the best service, every time.
+                </p>
+                <ul>
+                    <li><i class="fas fa-award"></i> SABS Approved Products</li>
+                    <li><i class="fas fa-users"></i> Professional, Friendly Team</li>
+                    <li><i class="fas fa-shield-alt"></i> Guaranteed Workmanship</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="img/about-team.png" alt="Noxcool Team">
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/product-fridge.jpg" alt="Fridge">
+                    <h3>Fridges</h3>
+                    <p>Energy-efficient, stylish fridges for homes and businesses.</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/product-freezer.jpg" alt="Freezer">
+                    <h3>Freezers</h3>
+                    <p>Reliable freezers to keep your goods fresh and preserved.</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/product-ac.jpg" alt="Air Conditioner">
+                    <h3>Air Conditioners</h3>
+                    <p>Modern cooling solutions for every space and budget.</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/product-washer.jpg" alt="Washing Machine">
+                    <h3>Washing Machines</h3>
+                    <p>Smart, water-saving washing machines for busy lives.</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/product-dishwasher.jpg" alt="Dishwasher">
+                    <h3>Dishwashers</h3>
+                    <p>Efficient dishwashers for sparkling clean results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Air Conditioning Installation</h3>
+                    <p>Expert installation for homes, offices, and commercial spaces.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Refrigeration Solutions</h3>
+                    <p>Custom refrigeration for retail, hospitality, and industry.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Maintenance & Repairs</h3>
+                    <p>Fast, reliable repairs and scheduled maintenance.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Branch Support</h3>
+                    <p>Nationwide service through our growing branch network.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Always available for emergencies and technical advice.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Request a Quote</h2>
+            <div class="contact-block">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +27 83 396 5948</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +27 83 396 5948</p>
+                    <p><i class="fas fa-envelope"></i> info@noxcool.co.za</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Randburg, Johannesburg</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Upper-Footer">
+            <div class="footer-section-1">
+                <h2>Contact our head office</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Randburg, Johannesburg</p>
+                <p><i class="fas fa-phone"></i> +27 83 396 5948</p>
+                <p><i class="fab fa-whatsapp"></i> Send a WhatsApp</p>
+                <p><i class="fas fa-globe"></i> www.noxcool.co.za</p>
+            </div>
+            <div class="footer-section-2">
+                <h2>Visit us</h2>
+                <p><i class="fas fa-store"></i> Our branches</p>
+                <h2>Our Services</h2>
+                <p><i class="fas fa-wind"></i> Air Conditioning</p>
+                <p><i class="fas fa-snowflake"></i> Refridgeration</p>
+                <p><i class="fas fa-tools"></i> Maintaince & Repair</p>
+            </div>   
+            <div class="footer-section-3">
+                <h2>Legal</h2>
+                <p>Trading Terms & Conditions</p>
+                <p>PAIA Manual</p>
+                <p>Privacy Policy</p>
+                <p>Online Terms & Conditions</p>
+            </div> 
+        </div>
+        <div class="Lower-Footer">
+            <p>Copyright &copy; 2025 Noxcool |  All Rights Reserved</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Noxcool" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/noxcool_sa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/noxcool/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@Noxcool" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="dev"><p><small>Developed by: <a href="https://tinashe-andre.github.io/Portfolio-Site-V2/" target="_blank">T.Dre</a> :)</small></p></div>
+        <!-- Floating Buttons -->
+        <div class="floating-buttons">
+            <!-- Scroll to Top -->
+            <button class="circle-btn" id="scrollTopBtn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+             <!-- WhatsApp -->
+            <a href="https://wa.me/27792296578" class="circle-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
