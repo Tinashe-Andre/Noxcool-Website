@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Fridges - Noxcool Air Conditioning & Appliances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="floatingActionButton.js" defer></script>
+    <link rel="icon" type="image/png" href="img/Icon.png">
+</head>
+<body>
+    <header>
+    <div class="top-nav">
+        <a href="index.html"><img src="img/Transparent Logo.png" alt="Noxcool Logo" class="logo"></a>
+        <div id="nav-links">
+            <a href="index.html" onclick="closeMenu()">Home</a>
+            <a href="fridges.html" onclick="closeMenu()" class="active">Fridges</a>
+            <a href="freezers.html" onclick="closeMenu()">Freezers</a>
+            <a href="air-conditioning.html" onclick="closeMenu()">Air Conditioning</a>
+            <a href="washing-machines.html" onclick="closeMenu()">Washing Machines & Dishwashers</a>
+            <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-snowflake"></i>
+                        <span>Premium Refrigeration</span>
+                    </div>
+                    <h1>Smart <span class="gradient-text">Refrigeration Solutions</span></h1>
+                    <p>Discover our range of energy-efficient, feature-rich fridges designed for modern homes and businesses. From compact models to large capacity units, we have the perfect cooling solution for your needs.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="cta-btn primary">
+                            <span>View Products</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="cta-btn secondary">
+                            <span>Get Quote</span>
+                            <i class="fas fa-calculator"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/product-fridge.jpg" alt="Premium Fridge Collection">
+                        <div class="floating-card">
+                            <i class="fas fa-leaf"></i>
+                            <span>Energy Efficient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Why Choose Our Fridges</span>
+                    <h2>Advanced <span class="gradient-text">Cooling Technology</span></h2>
+                    <p class="section-description">Experience the perfect blend of innovation, efficiency, and reliability</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Energy Star Certified</h3>
+                            <p>Reduce your electricity bills with our energy-efficient models that meet the highest standards.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Smart Connectivity</h3>
+                            <p>Control temperature, monitor energy usage, and receive alerts through your smartphone app.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Extended Warranty</h3>
+                            <p>Comprehensive warranty coverage with our professional installation and maintenance services.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Precise Temperature Control</h3>
+                            <p>Advanced cooling systems maintain optimal temperatures for maximum food freshness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Fridge Collection</span>
+                    <h2>Premium <span class="gradient-text">Refrigeration Models</span></h2>
+                    <p class="section-description">Choose from our carefully curated selection of top-quality fridges</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-fridge.jpg" alt="Compact Fridge">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Compact Single Door</h3>
+                            <p>Perfect for small spaces, offices, or as a secondary fridge. Energy-efficient and space-saving design.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">150L Capacity</span>
+                                <span class="feature-tag">A++ Rating</span>
+                            </div>
+                            <div class="product-price">From R2,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-fridge.jpg" alt="Double Door Fridge">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Double Door Family</h3>
+                            <p>Ideal for families with separate freezer and fridge compartments. Spacious and well-organized.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">350L Capacity</span>
+                                <span class="feature-tag">Frost Free</span>
+                            </div>
+                            <div class="product-price">From R4,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-fridge.jpg" alt="Side by Side Fridge">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Side by Side Premium</h3>
+                            <p>Luxury model with water dispenser, ice maker, and smart features. Perfect for large families.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">600L Capacity</span>
+                                <span class="feature-tag">Smart Features</span>
+                            </div>
+                            <div class="product-price">From R8,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-fridge.jpg" alt="French Door Fridge">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>French Door Deluxe</h3>
+                            <p>Premium design with bottom freezer drawer and advanced cooling technology for optimal freshness.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">500L Capacity</span>
+                                <span class="feature-tag">Multi-Zone Cooling</span>
+                            </div>
+                            <div class="product-price">From R12,999</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section class="installation-section">
+            <div class="container">
+                <div class="installation-content">
+                    <div class="installation-text">
+                        <span class="section-tag">Professional Installation</span>
+                        <h2>Expert <span class="gradient-text">Installation Service</span></h2>
+                        <p>Our certified technicians ensure your new fridge is installed correctly and safely. We handle everything from delivery to setup, including:</p>
+                        <ul class="installation-features">
+                            <li><i class="fas fa-check"></i> Free delivery and installation</li>
+                            <li><i class="fas fa-check"></i> Proper electrical connections</li>
+                            <li><i class="fas fa-check"></i> Leveling and positioning</li>
+                            <li><i class="fas fa-check"></i> Initial setup and testing</li>
+                            <li><i class="fas fa-check"></i> Disposal of old appliances</li>
+                        </ul>
+                        <a href="contact.html" class="cta-btn primary">
+                            <span>Schedule Installation</span>
+                            <i class="fas fa-calendar-alt"></i>
+                        </a>
+                    </div>
+                    <div class="installation-image">
+                        <img src="img/about-team.png" alt="Professional Installation">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Upgrade Your <span class="gradient-text">Refrigeration?</span></h2>
+                    <p>Get a free quote today and discover how our premium fridges can transform your kitchen experience.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="cta-btn primary">
+                            <span>Get Free Quote</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:+27833965948" class="cta-btn secondary">
+                            <span>Call Now</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Upper-Footer">
+            <div class="footer-section-1">
+                <h2>Contact our head office</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Randburg, Johannesburg</p>
+                <p><i class="fas fa-phone"></i> +27 83 396 5948</p>
+                <p><i class="fab fa-whatsapp"></i> Send a WhatsApp</p>
+                <p><i class="fas fa-globe"></i> www.noxcool.co.za</p>
+            </div>
+            <div class="footer-section-2">
+                <h2>Visit us</h2>
+                <p><i class="fas fa-store"></i> Our branches</p>
+                <h2>Our Services</h2>
+                <p><i class="fas fa-wind"></i> Air Conditioning</p>
+                <p><i class="fas fa-snowflake"></i> Refridgeration</p>
+                <p><i class="fas fa-tools"></i> Maintaince & Repair</p>
+            </div>   
+            <div class="footer-section-3">
+                <h2>Legal</h2>
+                <p>Trading Terms & Conditions</p>
+                <p>PAIA Manual</p>
+                <p>Privacy Policy</p>
+                <p>Online Terms & Conditions</p>
+            </div> 
+        </div>
+        <div class="Lower-Footer">
+            <p>Copyright &copy; 2025 Noxcool |  All Rights Reserved</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Noxcool" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/noxcool_sa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/noxcool/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@Noxcool" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="dev"><p><small>Developed by: <a href="https://tinashe-andre.github.io/Portfolio-Site-V2/" target="_blank">T.Dre</a> :)</small></p></div>
+        <!-- Floating Buttons -->
+        <div class="floating-buttons">
+            <!-- Scroll to Top -->
+            <button class="circle-btn" id="scrollTopBtn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+             <!-- WhatsApp -->
+            <a href="https://wa.me/27792296578" class="circle-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

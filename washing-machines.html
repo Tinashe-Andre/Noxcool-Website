@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing Machines & Dishwashers - Noxcool Air Conditioning & Appliances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="floatingActionButton.js" defer></script>
+    <link rel="icon" type="image/png" href="img/Icon.png">
+</head>
+<body>
+    <header>
+    <div class="top-nav">
+        <a href="index.html"><img src="img/Transparent Logo.png" alt="Noxcool Logo" class="logo"></a>
+        <div id="nav-links">
+            <a href="index.html" onclick="closeMenu()">Home</a>
+            <a href="fridges.html" onclick="closeMenu()">Fridges</a>
+            <a href="freezers.html" onclick="closeMenu()">Freezers</a>
+            <a href="air-conditioning.html" onclick="closeMenu()">Air Conditioning</a>
+            <a href="washing-machines.html" onclick="closeMenu()" class="active">Washing Machines & Dishwashers</a>
+            <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-tint"></i>
+                        <span>Smart Laundry Solutions</span>
+                    </div>
+                    <h1>Premium <span class="gradient-text">Laundry & Kitchen</span></h1>
+                    <p>Transform your daily chores with our range of energy-efficient washing machines and dishwashers. Smart features, water-saving technology, and superior cleaning performance for modern homes.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="cta-btn primary">
+                            <span>View Products</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="cta-btn secondary">
+                            <span>Get Quote</span>
+                            <i class="fas fa-calculator"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/product-washer.jpg" alt="Premium Washing Machines & Dishwashers">
+                        <div class="floating-card">
+                            <i class="fas fa-leaf"></i>
+                            <span>Water & Energy Saving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Why Choose Our Appliances</span>
+                    <h2>Advanced <span class="gradient-text">Cleaning Technology</span></h2>
+                    <p class="section-description">Experience superior performance with our smart laundry and kitchen solutions</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Water Saving Technology</h3>
+                            <p>Advanced water management systems reduce consumption by up to 50% while maintaining excellent cleaning results.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Smart App Control</h3>
+                            <p>Control your appliances remotely, monitor cycles, and receive notifications through our intuitive mobile app.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Quick Wash Programs</h3>
+                            <p>Express wash cycles for when you're in a hurry, without compromising on cleaning quality.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Allergy Care</h3>
+                            <p>Special programs for sensitive skin, removing allergens and bacteria for healthier living.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Washing Machines Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Washing Machines</span>
+                    <h2>Smart <span class="gradient-text">Laundry Solutions</span></h2>
+                    <p class="section-description">Choose from our range of high-performance washing machines</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-washer.jpg" alt="Front Load Washing Machine">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Front Load Standard</h3>
+                            <p>Energy-efficient front-loading design with multiple wash programs. Perfect for small to medium families.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">7kg Capacity</span>
+                                <span class="feature-tag">A+++ Rating</span>
+                            </div>
+                            <div class="product-price">From R4,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-washer.jpg" alt="Top Load Washing Machine">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Top Load Family</h3>
+                            <p>Convenient top-loading design with large capacity. Ideal for families with heavy laundry loads.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">10kg Capacity</span>
+                                <span class="feature-tag">Quick Wash</span>
+                            </div>
+                            <div class="product-price">From R6,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-washer.jpg" alt="Smart Washing Machine">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Smart WiFi Enabled</h3>
+                            <p>Advanced smart features with WiFi connectivity, app control, and intelligent wash programs.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">8kg Capacity</span>
+                                <span class="feature-tag">WiFi Control</span>
+                            </div>
+                            <div class="product-price">From R8,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-washer.jpg" alt="Washer Dryer Combo">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Washer Dryer Combo</h3>
+                            <p>Space-saving 2-in-1 solution. Wash and dry your clothes in one convenient appliance.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">7kg Wash/5kg Dry</span>
+                                <span class="feature-tag">All-in-One</span>
+                            </div>
+                            <div class="product-price">From R12,999</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dishwashers Section -->
+        <section class="dishwashers-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Dishwashers</span>
+                    <h2>Premium <span class="gradient-text">Dishwashing Solutions</span></h2>
+                    <p class="section-description">Make dishwashing effortless with our range of efficient dishwashers</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-dishwasher.jpg" alt="Compact Dishwasher">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Compact Countertop</h3>
+                            <p>Perfect for small kitchens or as a secondary dishwasher. Fits under most countertops.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">6 Place Settings</span>
+                                <span class="feature-tag">Energy Efficient</span>
+                            </div>
+                            <div class="product-price">From R3,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-dishwasher.jpg" alt="Built-in Dishwasher">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Built-in Standard</h3>
+                            <p>Seamlessly integrated into your kitchen design. Multiple wash programs for different load types.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">12 Place Settings</span>
+                                <span class="feature-tag">Quiet Operation</span>
+                            </div>
+                            <div class="product-price">From R5,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-dishwasher.jpg" alt="Smart Dishwasher">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Smart WiFi Enabled</h3>
+                            <p>Advanced smart features with app control, voice commands, and intelligent wash cycles.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">14 Place Settings</span>
+                                <span class="feature-tag">Smart Features</span>
+                            </div>
+                            <div class="product-price">From R8,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-dishwasher.jpg" alt="Premium Dishwasher">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Premium Drawer System</h3>
+                            <p>Luxury dual-drawer design with independent operation. Perfect for large families and entertaining.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">16 Place Settings</span>
+                                <span class="feature-tag">Dual Drawers</span>
+                            </div>
+                            <div class="product-price">From R12,999</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="benefits-content">
+                    <div class="benefits-text">
+                        <span class="section-tag">Appliance Benefits</span>
+                        <h2>Why Choose <span class="gradient-text">Smart Appliances?</span></h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Save Time</h3>
+                                    <p>Automate your laundry and dishwashing tasks, giving you more time for what matters most.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-tint"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Water Conservation</h3>
+                                    <p>Advanced water-saving technology reduces consumption while maintaining excellent results.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Energy Efficiency</h3>
+                                    <p>Lower electricity bills with energy-efficient appliances that meet the highest standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-image">
+                        <img src="img/about-team.png" alt="Smart Appliance Benefits">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Upgrade Your <span class="gradient-text">Laundry & Kitchen?</span></h2>
+                    <p>Get a free quote today and discover how our smart appliances can simplify your daily routine.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="cta-btn primary">
+                            <span>Get Free Quote</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:+27833965948" class="cta-btn secondary">
+                            <span>Call Now</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Upper-Footer">
+            <div class="footer-section-1">
+                <h2>Contact our head office</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Randburg, Johannesburg</p>
+                <p><i class="fas fa-phone"></i> +27 83 396 5948</p>
+                <p><i class="fab fa-whatsapp"></i> Send a WhatsApp</p>
+                <p><i class="fas fa-globe"></i> www.noxcool.co.za</p>
+            </div>
+            <div class="footer-section-2">
+                <h2>Visit us</h2>
+                <p><i class="fas fa-store"></i> Our branches</p>
+                <h2>Our Services</h2>
+                <p><i class="fas fa-wind"></i> Air Conditioning</p>
+                <p><i class="fas fa-snowflake"></i> Refridgeration</p>
+                <p><i class="fas fa-tools"></i> Maintaince & Repair</p>
+            </div>   
+            <div class="footer-section-3">
+                <h2>Legal</h2>
+                <p>Trading Terms & Conditions</p>
+                <p>PAIA Manual</p>
+                <p>Privacy Policy</p>
+                <p>Online Terms & Conditions</p>
+            </div> 
+        </div>
+        <div class="Lower-Footer">
+            <p>Copyright &copy; 2025 Noxcool |  All Rights Reserved</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Noxcool" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/noxcool_sa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/noxcool/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@Noxcool" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="dev"><p><small>Developed by: <a href="https://tinashe-andre.github.io/Portfolio-Site-V2/" target="_blank">T.Dre</a> :)</small></p></div>
+        <!-- Floating Buttons -->
+        <div class="floating-buttons">
+            <!-- Scroll to Top -->
+            <button class="circle-btn" id="scrollTopBtn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+             <!-- WhatsApp -->
+            <a href="https://wa.me/27792296578" class="circle-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

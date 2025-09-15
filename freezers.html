@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Freezers - Noxcool Air Conditioning & Appliances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="floatingActionButton.js" defer></script>
+    <link rel="icon" type="image/png" href="img/Icon.png">
+</head>
+<body>
+    <header>
+    <div class="top-nav">
+        <a href="index.html"><img src="img/Transparent Logo.png" alt="Noxcool Logo" class="logo"></a>
+        <div id="nav-links">
+            <a href="index.html" onclick="closeMenu()">Home</a>
+            <a href="fridges.html" onclick="closeMenu()">Fridges</a>
+            <a href="freezers.html" onclick="closeMenu()" class="active">Freezers</a>
+            <a href="air-conditioning.html" onclick="closeMenu()">Air Conditioning</a>
+            <a href="washing-machines.html" onclick="closeMenu()">Washing Machines & Dishwashers</a>
+            <a href="contact.html" onclick="closeMenu()">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-ice-cream"></i>
+                        <span>Deep Freeze Technology</span>
+                    </div>
+                    <h1>Professional <span class="gradient-text">Freezer Solutions</span></h1>
+                    <p>Keep your food fresh longer with our range of high-performance freezers. From chest freezers to upright models, we provide reliable freezing solutions for homes and businesses.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="cta-btn primary">
+                            <span>View Products</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="cta-btn secondary">
+                            <span>Get Quote</span>
+                            <i class="fas fa-calculator"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/product-freezer.jpg" alt="Premium Freezer Collection">
+                        <div class="floating-card">
+                            <i class="fas fa-thermometer-empty"></i>
+                            <span>-18°C Deep Freeze</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Why Choose Our Freezers</span>
+                    <h2>Advanced <span class="gradient-text">Freezing Technology</span></h2>
+                    <p class="section-description">Experience superior freezing performance with our cutting-edge technology</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Frost-Free Operation</h3>
+                            <p>No more manual defrosting! Our frost-free technology keeps your freezer clean and efficient.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Energy Efficient</h3>
+                            <p>Low power consumption with high performance. Save on electricity bills while maintaining optimal freezing.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Temperature Alerts</h3>
+                            <p>Smart monitoring system alerts you if temperature rises, ensuring your food stays frozen safely.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Large Capacity</h3>
+                            <p>Spacious interiors with adjustable shelves and baskets for maximum storage flexibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Freezer Collection</span>
+                    <h2>Premium <span class="gradient-text">Freezing Solutions</span></h2>
+                    <p class="section-description">Choose from our comprehensive range of freezers for every need</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-freezer.jpg" alt="Chest Freezer">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Chest Freezer Compact</h3>
+                            <p>Perfect for small spaces and apartments. Energy-efficient chest design with easy access lid.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">150L Capacity</span>
+                                <span class="feature-tag">Manual Defrost</span>
+                            </div>
+                            <div class="product-price">From R1,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-freezer.jpg" alt="Upright Freezer">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Upright Freezer Family</h3>
+                            <p>Convenient upright design with multiple shelves. Frost-free operation for hassle-free maintenance.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">250L Capacity</span>
+                                <span class="feature-tag">Frost Free</span>
+                            </div>
+                            <div class="product-price">From R3,499</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-freezer.jpg" alt="Large Chest Freezer">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Large Chest Freezer</h3>
+                            <p>Ideal for large families or bulk storage. Massive capacity with energy-efficient operation.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">400L Capacity</span>
+                                <span class="feature-tag">Energy Star</span>
+                            </div>
+                            <div class="product-price">From R4,999</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/product-freezer.jpg" alt="Commercial Freezer">
+                            <div class="product-overlay">
+                                <a href="contact.html" class="product-btn">Get Quote</a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Commercial Freezer</h3>
+                            <p>Heavy-duty construction for commercial use. Reliable performance for restaurants and businesses.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">600L Capacity</span>
+                                <span class="feature-tag">Commercial Grade</span>
+                            </div>
+                            <div class="product-price">From R8,999</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="benefits-content">
+                    <div class="benefits-text">
+                        <span class="section-tag">Freezer Benefits</span>
+                        <h2>Why You Need a <span class="gradient-text">Quality Freezer</span></h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Extended Food Storage</h3>
+                                    <p>Keep food fresh for months, reducing waste and saving money on groceries.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Bulk Shopping</h3>
+                                    <p>Buy in bulk during sales and store for extended periods without quality loss.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Reduce Food Waste</h3>
+                                    <p>Proper freezing prevents spoilage and helps reduce environmental impact.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-image">
+                        <img src="img/about-team.png" alt="Freezer Benefits">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Upgrade Your <span class="gradient-text">Freezing Solution?</span></h2>
+                    <p>Get a free quote today and discover how our premium freezers can meet your storage needs.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="cta-btn primary">
+                            <span>Get Free Quote</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:+27833965948" class="cta-btn secondary">
+                            <span>Call Now</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Upper-Footer">
+            <div class="footer-section-1">
+                <h2>Contact our head office</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Randburg, Johannesburg</p>
+                <p><i class="fas fa-phone"></i> +27 83 396 5948</p>
+                <p><i class="fab fa-whatsapp"></i> Send a WhatsApp</p>
+                <p><i class="fas fa-globe"></i> www.noxcool.co.za</p>
+            </div>
+            <div class="footer-section-2">
+                <h2>Visit us</h2>
+                <p><i class="fas fa-store"></i> Our branches</p>
+                <h2>Our Services</h2>
+                <p><i class="fas fa-wind"></i> Air Conditioning</p>
+                <p><i class="fas fa-snowflake"></i> Refridgeration</p>
+                <p><i class="fas fa-tools"></i> Maintaince & Repair</p>
+            </div>   
+            <div class="footer-section-3">
+                <h2>Legal</h2>
+                <p>Trading Terms & Conditions</p>
+                <p>PAIA Manual</p>
+                <p>Privacy Policy</p>
+                <p>Online Terms & Conditions</p>
+            </div> 
+        </div>
+        <div class="Lower-Footer">
+            <p>Copyright &copy; 2025 Noxcool |  All Rights Reserved</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Noxcool" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/noxcool_sa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/noxcool/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@Noxcool" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="dev"><p><small>Developed by: <a href="https://tinashe-andre.github.io/Portfolio-Site-V2/" target="_blank">T.Dre</a> :)</small></p></div>
+        <!-- Floating Buttons -->
+        <div class="floating-buttons">
+            <!-- Scroll to Top -->
+            <button class="circle-btn" id="scrollTopBtn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+             <!-- WhatsApp -->
+            <a href="https://wa.me/27792296578" class="circle-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

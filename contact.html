@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Noxcool Air Conditioning & Appliances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="floatingActionButton.js" defer></script>
+    <link rel="icon" type="image/png" href="img/Icon.png">
+</head>
+<body>
+    <header>
+    <div class="top-nav">
+        <a href="index.html"><img src="img/Transparent Logo.png" alt="Noxcool Logo" class="logo"></a>
+        <div id="nav-links">
+            <a href="index.html" onclick="closeMenu()">Home</a>
+            <a href="fridges.html" onclick="closeMenu()">Fridges</a>
+            <a href="freezers.html" onclick="closeMenu()">Freezers</a>
+            <a href="air-conditioning.html" onclick="closeMenu()">Air Conditioning</a>
+            <a href="washing-machines.html" onclick="closeMenu()">Washing Machines & Dishwashers</a>
+            <a href="contact.html" onclick="closeMenu()" class="active">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Customer Support</span>
+                    </div>
+                    <h1>Get in <span class="gradient-text">Touch Today</span></h1>
+                    <p>Ready to transform your home or business with our premium appliances? Contact our expert team for personalized advice, free quotes, and professional installation services.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact-form" class="cta-btn primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+27833965948" class="cta-btn secondary">
+                            <span>Call Now</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/about-team.png" alt="Noxcool Customer Support Team">
+                        <div class="floating-card">
+                            <i class="fas fa-clock"></i>
+                            <span>Quick Response</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods Section -->
+        <section class="contact-methods-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact Options</span>
+                    <h2>Multiple Ways to <span class="gradient-text">Reach Us</span></h2>
+                    <p class="section-description">Choose the most convenient way to get in touch with our team</p>
+                </div>
+                <div class="contact-methods-grid">
+                    <div class="contact-method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Phone Support</h3>
+                            <p>Speak directly with our experts</p>
+                            <a href="tel:+27833965948" class="contact-link">+27 83 396 5948</a>
+                            <span class="method-hours">Mon-Fri: 8AM-6PM | Sat: 9AM-4PM</span>
+                        </div>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>WhatsApp</h3>
+                            <p>Quick responses via WhatsApp</p>
+                            <a href="https://wa.me/27833965948" class="contact-link">+27 83 396 5948</a>
+                            <span class="method-hours">Available 24/7</span>
+                        </div>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Email Support</h3>
+                            <p>Send us detailed inquiries</p>
+                            <a href="mailto:info@noxcool.co.za" class="contact-link">info@noxcool.co.za</a>
+                            <span class="method-hours">Response within 2 hours</span>
+                        </div>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Visit Our Showroom</h3>
+                            <p>See our products in person</p>
+                            <a href="#" class="contact-link">Randburg, Johannesburg</a>
+                            <span class="method-hours">By appointment only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section" id="contact-form">
+            <div class="container">
+                <div class="contact-form-container">
+                    <div class="form-wrapper">
+                        <div class="form-header">
+                            <span class="section-tag">Get a Quote</span>
+                            <h2>Request Your <span class="gradient-text">Free Quote</span></h2>
+                            <p>Fill out the form below and we'll get back to you within 2 hours with a personalized quote.</p>
+                        </div>
+                        <form class="enhanced-contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Required *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="air-conditioning">Air Conditioning Installation</option>
+                                    <option value="refrigeration">Refrigeration Solutions</option>
+                                    <option value="washing-machines">Washing Machines</option>
+                                    <option value="dishwashers">Dishwashers</option>
+                                    <option value="maintenance">Maintenance & Repairs</option>
+                                    <option value="consultation">Free Consultation</option>
+                                </select>
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5000">Under R5,000</option>
+                                    <option value="5000-10000">R5,000 - R10,000</option>
+                                    <option value="10000-20000">R10,000 - R20,000</option>
+                                    <option value="20000-50000">R20,000 - R50,000</option>
+                                    <option value="over-50000">Over R50,000</option>
+                                </select>
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your project, space requirements, and any specific needs..." required></textarea>
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for tips and special offers
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Send Quote Request</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-info-panel">
+                        <div class="info-header">
+                            <h3>Why Choose Noxcool?</h3>
+                            <p>We're committed to providing exceptional service and quality products.</p>
+                        </div>
+                        <div class="info-features">
+                            <div class="info-feature">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>15+ Years Experience</h4>
+                                    <p>Trusted expertise in the industry</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Warranty Guaranteed</h4>
+                                    <p>Comprehensive warranty on all products</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-tools"></i>
+                                <div>
+                                    <h4>Professional Installation</h4>
+                                    <p>Certified technicians for perfect setup</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-headset"></i>
+                                <div>
+                                    <h4>24/7 Support</h4>
+                                    <p>Always here when you need us</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emergency-contact">
+                            <h4>Emergency Service</h4>
+                            <p>Need urgent repairs? Call our emergency line:</p>
+                            <a href="tel:+27833965948" class="emergency-number">+27 83 396 5948</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Frequently Asked</span>
+                    <h2>Common <span class="gradient-text">Questions</span></h2>
+                    <p class="section-description">Find answers to the most common questions about our services</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does installation take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Installation time varies by product type. Air conditioning units typically take 2-4 hours, while appliances like fridges and washing machines usually take 1-2 hours. We'll provide a specific timeline during your consultation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer financing options?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer flexible financing options through our partner banks. You can spread payments over 12, 24, or 36 months with competitive interest rates. Contact us for more details.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What warranty do you provide?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We provide comprehensive warranties on all products and installations. Standard warranty is 2 years on appliances and 5 years on air conditioning systems, with extended warranty options available.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you service all brands?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We service most major brands including Samsung, LG, Bosch, Whirlpool, and more. Our certified technicians are trained on multiple brands and can handle most repair and maintenance needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Get Started? <span class="gradient-text">Contact Us Today!</span></h2>
+                    <p>Don't wait - get your free quote and start enjoying the benefits of premium appliances and climate control.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact-form" class="cta-btn primary">
+                            <span>Get Free Quote</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:+27833965948" class="cta-btn secondary">
+                            <span>Call Now</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Upper-Footer">
+            <div class="footer-section-1">
+                <h2>Contact our head office</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Randburg, Johannesburg</p>
+                <p><i class="fas fa-phone"></i> +27 83 396 5948</p>
+                <p><i class="fab fa-whatsapp"></i> Send a WhatsApp</p>
+                <p><i class="fas fa-globe"></i> www.noxcool.co.za</p>
+            </div>
+            <div class="footer-section-2">
+                <h2>Visit us</h2>
+                <p><i class="fas fa-store"></i> Our branches</p>
+                <h2>Our Services</h2>
+                <p><i class="fas fa-wind"></i> Air Conditioning</p>
+                <p><i class="fas fa-snowflake"></i> Refridgeration</p>
+                <p><i class="fas fa-tools"></i> Maintaince & Repair</p>
+            </div>   
+            <div class="footer-section-3">
+                <h2>Legal</h2>
+                <p>Trading Terms & Conditions</p>
+                <p>PAIA Manual</p>
+                <p>Privacy Policy</p>
+                <p>Online Terms & Conditions</p>
+            </div> 
+        </div>
+        <div class="Lower-Footer">
+            <p>Copyright &copy; 2025 Noxcool |  All Rights Reserved</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/Noxcool" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/noxcool_sa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/noxcool/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@Noxcool" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="dev"><p><small>Developed by: <a href="https://tinashe-andre.github.io/Portfolio-Site-V2/" target="_blank">T.Dre</a> :)</small></p></div>
+        <!-- Floating Buttons -->
+        <div class="floating-buttons">
+            <!-- Scroll to Top -->
+            <button class="circle-btn" id="scrollTopBtn" title="Go to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+             <!-- WhatsApp -->
+            <a href="https://wa.me/27792296578" class="circle-btn whatsapp-btn" title="Chat on WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
