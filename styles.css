@@ -1663,6 +1663,7 @@ footer a:hover {
     
     .form-row {
         grid-template-columns: 1fr;
+        justify-self: unset;
     }
     
     .efficiency-stats {
