@@ -1,4 +1,14 @@
 // Enhanced mobile navigation functionality
+function setHeaderHeight() {
+    const header = document.querySelector('header');
+    if (header) {
+        document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+    }
+}
+
+window.addEventListener('load', setHeaderHeight);
+window.addEventListener('resize', setHeaderHeight);
+
 function myFunction() {
     var x = document.getElementById("nav-links");
     var icon = document.querySelector('.icon i');
@@ -14,6 +24,7 @@ function myFunction() {
         icon.classList.add("fa-times");
         document.body.style.overflow = "hidden";
     }
+    setHeaderHeight();
 }
 
 function closeMenu() {
@@ -24,6 +35,7 @@ function closeMenu() {
     icon.classList.remove("fa-times");
     icon.classList.add("fa-bars");
     document.body.style.overflow = "auto";
+    setHeaderHeight();
 }
 
 // Close menu when clicking outside
@@ -60,8 +72,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Dynamically set header height so hero never sits under fixed nav
+function setHeaderHeight() {
+    const header = document.querySelector('header');
+    if (header) {
+        document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+    }
+}
+
+window.addEventListener('load', setHeaderHeight);
+window.addEventListener('resize', setHeaderHeight);
+
 // FAQ functionality for contact page
 document.addEventListener('DOMContentLoaded', function() {
+    setHeaderHeight();
     const faqItems = document.querySelectorAll('.faq-item');
     
     faqItems.forEach(item => {

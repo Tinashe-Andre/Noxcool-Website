@@ -6,34 +6,40 @@
 }
 
 :root {
-    /* Modern Color Palette */
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
-    --primary-light: #3b82f6;
-    --secondary-color: #06b6d4;
-    --secondary-dark: #0891b2;
-    --accent-color: #f59e0b;
-    --accent-light: #fbbf24;
+    /* Sinort Brand Colors */
+    --primary-color: #1e3a5f;
+    --primary-dark: #152a45;
+    --primary-light: #2563a8;
+    --secondary-color: #0ea5e9;
+    --secondary-dark: #0284c7;
+    --accent-color: #f97316;
+    --accent-light: #fb923c;
+    --cool-blue: #38bdf8;
+    --heat-orange: #ea580c;
     
     /* Neutral Colors */
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
-    --text-light: #9ca3af;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-light: #94a3b8;
     --bg-primary: #ffffff;
     --bg-secondary: #f8fafc;
     --bg-tertiary: #f1f5f9;
-    --border-color: #e5e7eb;
-    --border-light: #f3f4f6;
+    --border-color: #e2e8f0;
+    --border-light: #f1f5f9;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #b998da 100%);
-    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Gradients - Fire & Ice theme */
+    --gradient-primary: linear-gradient(135deg, #1e3a5f 0%, #0ea5e9 100%);
+    --gradient-secondary: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    --gradient-accent: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+    --gradient-hero: linear-gradient(135deg, #1e3a5f 0%, #2563a8 45%, #0ea5e9 100%);
+    --gradient-fire-ice: linear-gradient(135deg, #f97316 0%, #0ea5e9 100%);
+    
+    /* Header height - used to prevent hero/header overlap */
+    --header-height: 96px;
     
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     
     /* Spacing */
     --section-padding: 5rem 0;
@@ -63,6 +69,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    padding-top: var(--header-height);
+}
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
@@ -90,7 +100,8 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    height: var(--header-height);
+    background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-light);
     transition: var(--transition-normal);
@@ -111,15 +122,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
     position: relative;
 }
 
 .logo {
-    height: 80px;
+    height: 64px;
     width: auto;
+    max-width: 200px;
+    object-fit: contain;
     transition: var(--transition-normal);
 }
 
@@ -184,27 +198,14 @@ header {
 /* Hero Section */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--header-height));
     display: flex;
     align-items: center;
     background: var(--gradient-hero);
     overflow: hidden;
-    margin-top: 80px;
-}
-
-/* Fix hero section margin on mobile */
-@media (max-width: 768px) {
-    .hero {
-        margin-top: 70px;
-        min-height: 80vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        margin-top: 65px;
-        min-height: 70vh;
-    }
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 0;
 }
 
 .hero-background {
@@ -294,12 +295,13 @@ header {
 }
 
 .cta-btn.primary {
-    background: white;
-    color: var(--primary-color);
+    background: var(--accent-color);
+    color: white;
     box-shadow: var(--shadow-lg);
 }
 
 .cta-btn.primary:hover {
+    background: var(--accent-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-xl);
 }
@@ -813,7 +815,7 @@ header {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
 }
 
 .form-group i {
@@ -1053,33 +1055,20 @@ footer a:hover {
 /* Page-specific styles for individual product pages */
 .page-hero {
     position: relative;
-    min-height: 80vh;
+    min-height: calc(80vh - var(--header-height));
     display: flex;
     align-items: center;
     background: var(--gradient-hero);
     overflow: hidden;
-    margin-top: 80px;
-}
-
-/* Ensure proper spacing on mobile */
-@media (max-width: 768px) {
-    .page-hero {
-        margin-top: 70px;
-        min-height: 60vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .page-hero {
-        margin-top: 65px;
-        min-height: 50vh;
-    }
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-bottom: 0;
 }
 
 /* Active navigation link */
 #nav-links a.active {
     color: var(--primary-color);
-    background: rgba(37, 99, 235, 0.1);
+    background: rgba(30, 58, 95, 0.1);
 }
 
 #nav-links a.active::after {
@@ -1436,7 +1425,7 @@ footer a:hover {
 .enhanced-contact-form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
 }
 
 .enhanced-contact-form i {
@@ -1672,8 +1661,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
     .page-hero {
-        min-height: 60vh;
-        margin-top: 70px;
+        min-height: calc(50vh - var(--header-height));
     }
     
     .contact-methods-grid,
@@ -1759,8 +1747,19 @@ footer a:hover {
 
 @media (max-width: 768px) {
     :root {
+        --header-height: 80px;
         --section-padding: 3rem 0;
         --container-padding: 0 1rem;
+    }
+
+    .hero {
+        min-height: calc(80vh - var(--header-height));
+        padding-top: 1.5rem;
+    }
+
+    .page-hero {
+        min-height: calc(60vh - var(--header-height));
+        padding-top: 1.5rem;
     }
     
     /* Ensure all containers have proper padding */
@@ -1822,7 +1821,7 @@ footer a:hover {
     }
     
     #nav-links a.active {
-        background: rgba(37, 99, 235, 0.1);
+        background: rgba(30, 58, 95, 0.1);
         color: var(--primary-color);
     }
     
@@ -1878,11 +1877,7 @@ footer a:hover {
         text-align: center;
     }
     
-    /* Page-specific mobile adjustments */
-    .page-hero {
-        min-height: 60vh;
-        margin-top: 70px;
-    }
+    /* Page-specific mobile adjustments - spacing handled by main padding-top */
     
     .contact-methods-grid,
     .features-grid {
@@ -1955,8 +1950,19 @@ footer a:hover {
 
 @media (max-width: 480px) {
     :root {
+        --header-height: 74px;
         --section-padding: 2rem 0;
         --container-padding: 0 0.75rem;
+    }
+
+    .hero {
+        min-height: calc(70vh - var(--header-height));
+        padding-top: 1rem;
+    }
+
+    .page-hero {
+        min-height: calc(50vh - var(--header-height));
+        padding-top: 1rem;
     }
     
     /* Ensure all containers have proper padding on small mobile */
@@ -1978,6 +1984,10 @@ footer a:hover {
 
 /* Extra small screens - fix hamburger positioning */
 @media (max-width: 408px) {
+    :root {
+        --header-height: 62px;
+    }
+
     .top-nav {
         padding: 0.5rem 0.75rem;
         flex-wrap: nowrap;
@@ -1985,7 +1995,8 @@ footer a:hover {
     }
     
     .logo {
-        height: 50px;
+        height: 48px;
+        max-width: 160px;
         flex-shrink: 0;
     }
     

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" role="img" aria-label="Sinort Air Conditioning">
+  <defs>
+    <linearGradient id="coolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="heatGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- S -->
+  <text x="0" y="38" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#1e3a5f" letter-spacing="1">S</text>
+  <!-- I -->
+  <text x="28" y="38" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#1e3a5f" letter-spacing="1">I</text>
+  <!-- N -->
+  <text x="44" y="38" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#1e3a5f" letter-spacing="1">N</text>
+
+  <!-- Stylized O -->
+  <circle cx="88" cy="26" r="18" fill="none" stroke="#1e3a5f" stroke-width="4"/>
+  <path d="M74 22 Q88 8 102 22" fill="none" stroke="url(#coolGrad)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M82 32 Q88 42 94 32 Q88 38 82 32" fill="url(#heatGrad)"/>
+  <path d="M86 28 L88 36 L90 28 Z" fill="#f97316"/>
+
+  <!-- RT -->
+  <text x="112" y="38" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#1e3a5f" letter-spacing="1">RT</text>
+
+  <!-- Subtitle -->
+  <text x="0" y="58" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#1e3a5f" letter-spacing="3">AIR CONDITIONING</text>
+  <text x="0" y="74" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" fill="#64748b" letter-spacing="2">HVAC SYSTEMS</text>
+
+  <!-- Decorative fire/ice motif -->
+  <g transform="translate(240, 10)" opacity="0.9">
+    <circle cx="35" cy="35" r="34" fill="none" stroke="#1e3a5f" stroke-width="2" opacity="0.15"/>
+    <path d="M35 8 L38 20 L50 18 L40 28 L44 40 L35 32 L26 40 L30 28 L20 18 L32 20 Z" fill="url(#coolGrad)" opacity="0.35"/>
+    <path d="M35 62 Q28 50 32 42 Q35 48 38 42 Q42 50 35 62" fill="url(#heatGrad)" opacity="0.5"/>
+  </g>
+</svg>
