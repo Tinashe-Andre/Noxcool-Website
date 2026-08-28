@@ -1100,6 +1100,16 @@ footer a:hover {
         grid-column: 1 / -1;
         max-width: 50%;
     }
+
+    /* When there are exactly 4 cards, the 4th wraps onto its own row at this
+       grid's max-width (3 columns fit, the 4th is left alone) - center it
+       instead of leaving it flush left */
+    .features-grid:has(.feature-card:nth-child(4):last-child) .feature-card:nth-child(4) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%;
+        max-width: 360px;
+    }
 }
 
 /* Products Section */
@@ -1114,6 +1124,80 @@ footer a:hover {
     color: var(--primary-color);
     margin-top: 1rem;
     font-family: var(--font-heading);
+}
+
+/* Gallery Section (Air Conditioning page) */
+.gallery-section {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.gallery-item {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: var(--transition-slow);
+}
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Video Showcase Section (Home page) */
+.video-showcase {
+    padding: var(--section-padding);
+    background: var(--bg-secondary);
+}
+
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+.video-wrapper {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    background: #000;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 640px;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
 }
 
 /* Installation Section */
@@ -1219,13 +1303,16 @@ footer a:hover {
     padding: 0 1rem;
 }
 
-/* Center last items in services grid */
+/* Center last item in services grid - only when there are 5+ cards leaving
+   an odd one out (e.g. the homepage's 5-card row). A 3-card row (e.g. the
+   Air Conditioning page's "Complete Air Conditioning Solutions" section)
+   should stay as 3 equal cards on one line instead of being centered/enlarged. */
 @media (min-width: 768px) {
-    .services-grid:has(.service-card:nth-child(odd):last-child) {
+    .services-grid:has(.service-card:nth-child(5)):has(.service-card:nth-child(odd):last-child) {
         justify-items: center;
     }
     
-    .services-grid:has(.service-card:nth-child(odd):last-child) .service-card:last-child {
+    .services-grid:has(.service-card:nth-child(5)):has(.service-card:nth-child(odd):last-child) .service-card:last-child {
         grid-column: 1 / -1;
         max-width: 50%;
     }
